@@ -1,0 +1,23 @@
+﻿@{
+    Layout = null;
+}
+
+
+@{
+    string[] hobbies = new string[]
+            {
+                "Cricket", "Dancing", "Drawing"
+            };
+    string[] cources = new string[]
+    {
+                "BCA", "FBR", "RTF"
+    };
+    string[] skils = new string[]
+            {
+                "C#", "ASP.NET", "Azure"
+            };
+}
+
+@using HTML_HelpesHW.Infrastructure;
+<h2>Registration Form</h2>
+@Html.CreateForm(hobbies, cources, skils)
